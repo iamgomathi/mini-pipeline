@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Chennai — Simple Page</title>
+  <style>
+    :root{ --accent:#0b6fb9; --muted:#666; --card:#fff; --bg:#f6f8fb }
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans',Arial; margin:0; background:var(--bg); color:#111}
+    header{background:linear-gradient(90deg,var(--accent),#2aa0e6); color:white; padding:24px 16px}
+    .container{max-width:900px;margin:18px auto;padding:0 16px}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:8px 0 0;color:rgba(255,255,255,0.9)}
+    nav{margin-top:10px}
+    nav a{color:rgba(255,255,255,0.95); text-decoration:none; margin-right:12px; font-weight:600}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:18px}
+    .card{background:var(--card); padding:14px;border-radius:10px;box-shadow:0 6px 16px rgba(15,30,50,0.06)}
+    .card h3{margin:0 0 8px;font-size:1.05rem}
+    .muted{color:var(--muted);font-size:0.95rem}
+
+    footer{max-width:900px;margin:20px auto;padding:12px 16px;text-align:center;color:var(--muted)}
+
+    /* small helper */
+    .btn{display:inline-block;padding:8px 10px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
+    @media (max-width:420px){header{padding:18px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>My Chennai — Quick Guide</h1>
+      <p class="lead">Simple page with famous places, short phrases and speaking practice.</p>
+      <nav>
+        <a href="#places">Places</a>
+        <a href="#food">Food</a>
+        <a href="#speech">Speech</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="places" class="grid" aria-labelledby="places-title">
+      <div class="card">
+        <h3 id="places-title">Marina Beach</h3>
+        <p class="muted">One of the longest urban beaches. Good for morning walks and sunrise.</p>
+        <p>Use this phrase: <strong>"I love watching the sunrise at Marina Beach."</strong></p>
+      </div>
+
+      <div class="card">
+        <h3>Kapaleeshwarar Temple</h3>
+        <p class="muted">Historic temple in Mylapore with beautiful Dravidian architecture.</p>
+        <p>Try: <em>"Kapaleeshwarar temple is beautiful and very old."</em></p>
+      </div>
+
+      <div class="card">
+        <h3>Santhome Church</h3>
+        <p class="muted">A 400+ year old church built by the Portuguese over St. Thomas's tomb.</p>
+        <p>Say: "Santhome Church has fine white architecture and calm atmosphere."</p>
+      </div>
+
+      <div class="card">
+        <h3>Express Avenue / Phoenix Mall</h3>
+        <p class="muted">Popular malls for shopping, movies and food.</p>
+        <p>Say: "I go to Phoenix Mall on weekends for movies and food."</p>
+      </div>
+
+      <div class="card">
+        <h3>Guindy National Park</h3>
+        <p class="muted">A small green park inside the city with deer and birds.</p>
+        <p>Say: "Guindy is surprising — a green patch in the city to relax."</p>
+      </div>
+
+      <div class="card">
+        <h3>Mahabalipuram (near Chennai)</h3>
+        <p class="muted">UNESCO site known for rock-cut temples and sculptures.</p>
+        <p>Say: "Mahabalipuram is a good day trip from Chennai for history lovers."</p>
+      </div>
+    </section>
+
+    <section id="food" style="margin-top:22px">
+      <div class="card">
+        <h3>Famous Foods</h3>
+        <p class="muted">Idli, dosa, filter coffee, biryani and seafood.</p>
+        <ul>
+          <li>"I like filter coffee in the morning."</li>
+          <li>"Murugan Idli and Saravana Bhavan serve good traditional meals."</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="speech" style="margin-top:22px">
+      <div class="card">
+        <h3>Short Speech — "My City: Chennai"</h3>
+        <p class="muted">Practice this short speech slowly and clearly.</p>
+        <p>
+          <strong>"Chennai is a coastal city in southern India. It has beautiful beaches like Marina and meaningful cultural places like Kapaleeshwarar Temple and Santhome Church. The food in Chennai is delicious, especially idli, dosa and filter coffee. I enjoy the mix of tradition and modern life in my city."</strong>
+        </p>
+        <p>Tip: Read it twice — first for meaning, second slowly aloud for pronunciation practice.</p>
+      </div>
+    </section>
+
+    <div style="margin:22px 0;text-align:center">
+      <a class="btn" href="#places">Start Practicing</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Open this file in a browser to view. Edit the text to add your own sentences or places.</p>
+  </footer>
+</body>
+</html>
